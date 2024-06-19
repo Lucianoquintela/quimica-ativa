@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: SeaGreen;
+    padding: 10px;
+}
+
+.link-cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px;
+}
+
+img {
+    width: 70px;
+    height: 60px;
+}
+
+.text-header,
+span {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 290px;
+    height: 300px;
+    perspective: 1000px;
+    display: block;
+    padding: 20px;
+    margin: auto;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.frente,
+.atras {
+    border-radius: 20px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.frente {
+    background-color: MediumSeaGreen;
+    position: absolute;
+    z-index: -1;
+}
+
+.atras {
+    background-color: #2980b9;
+    transform: rotateY(180deg);
+}
+
+footer {
+    background-color: SeaGreen;
+    height: 80px;
+    width: 100%;
+    color: #fff;
+    margin-top: 192px;
+    padding: 10px;
+}
+
+.text-creditos {
+    padding: 30px;
+    text-align: center;
+}
+
+.text-monitorias {
+    margin-top: 90px;
+    text-align: center;
+}
+
+.monitorias-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.imagens-monitorias-cards {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 20px;
+    filter: blur(2px);
+}
+
+.text-card-frente {
+    font-size: 25px;
+    color: white;
+    font-weight: bolder;
+    margin-top: 45%;
+}
+
+.text-card-atras {
+    margin-top: 20px;
+    padding: 5px;
+    font-size: 17px;
+    overflow-y: auto;
+    max-width: 300px;
+    max-height: 250px;
+    color: white;
+}
+
+span {
+    animation: changeColor 3s linear infinite;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@keyframes changeColor {
+    0% {
+        color: GreenYellow;
+    }
+
+    25% {
+        color: white;
+    }
+
+    50% {
+        color: GreenYellow;
+    }
+
+    70% {
+        color: white;
+    }
+
+    100% {
+        color: Chartreuse;
+    }
+}
+
+@media (max-width: 1280px) {
+    .text-monitorias {
+        margin-top: 30px;
+    }
+
+    footer {
+        margin-top: 104px;
+    }
+}
