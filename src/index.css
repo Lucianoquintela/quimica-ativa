@@ -7,7 +7,15 @@
   list-style: none;
   text-decoration: none;
 }
-
+.containerGlobal{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.tituloContainerGlobal{
+    margin-bottom: 10px; 
+}
 :root {
   /* Fontes */
   --font-heading: 'Space Grotesk', sans-serif;

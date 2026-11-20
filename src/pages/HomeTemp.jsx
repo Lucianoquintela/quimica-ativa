@@ -1,9 +1,14 @@
 
 const Home = () => {
     return (
-    
-         <main></main>              
-        
+        <>
+            <main className="containerGlobal">
+                <h2 className="tituloContainerGlobal">HomePage</h2>
+            </main>
+        </>
+
+
+
     );
 }
 
